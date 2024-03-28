@@ -7,6 +7,7 @@
     android:layout_height="match_parent">
 
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="250dp"
@@ -14,12 +15,17 @@
         android:background="@drawable/borgir_image"
         >
 
+
+
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:orientation="vertical"
-            android:padding="40dp">
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/toolbar"
+                />
 
             <TextView
                 android:id="@+id/textViewRestaurantName"
@@ -30,13 +36,15 @@
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
                 android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_gravity="center">
 
                 <TextView
                     android:id="@+id/textViewRating"
@@ -69,7 +77,8 @@
                 android:layout_height="wrap_content"
                 android:text="Opening Time: 9:00 AM - 10:00 PM"
                 android:textColor="@android:color/white"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:layout_gravity="center"/>
 
         </LinearLayout>
 
@@ -92,7 +101,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
 
             <Button
                 android:layout_width="0dp"
@@ -133,7 +143,11 @@
                 android:layout_margin="3dp"
                 style="?android:attr/buttonBarButtonStyle"
                 android:backgroundTint="#FFD580"/>
+
+
         </LinearLayout>
+
+
 
         <LinearLayout
             android:layout_width="match_parent"

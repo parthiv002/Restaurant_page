@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/back"/>
+
+    <ImageView
+        android:id="@+id/search_icon"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/search"
+        android:layout_toStartOf="@id/like_icon"
+        android:layout_margin="10dp"/>
+
+    <ImageView
+        android:id="@+id/like_icon"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/favourites"
+        android:layout_toStartOf="@id/menu_icon"
+        android:layout_margin="10dp"/>
+
+    <ImageView
+        android:id="@+id/menu_icon"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/menu"
+        android:layout_gravity="end"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"/>
+
+
+
+</RelativeLayout>
