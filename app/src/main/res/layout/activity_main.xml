@@ -48,8 +48,8 @@
                     android:textSize="18sp" />
 
                 <ImageView
-                    android:layout_width="10dp"
-                    android:layout_height="40dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_marginStart="4dp"
                     android:src="@drawable/star_rating" />
 
@@ -90,7 +90,6 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -99,29 +98,41 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Sort"
-                android:layout_margin="3dp"/>
+                android:text="@string/sort"
+                android:textColor="#FFA500"
+                android:layout_margin="3dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:backgroundTint="#FFD580"/>
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Food"
-                android:layout_margin="3dp"/>
+                android:text="@string/food"
+                android:textColor="#FFA500"
+                android:layout_margin="3dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:backgroundTint="#FFD580"/>
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Items"
-                android:layout_margin="3dp"/>
+                android:text="@string/items"
+                android:textColor="#FFA500"
+                android:layout_margin="3dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:backgroundTint="#FFD580"/>
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Rating"
-                android:layout_margin="3dp"/>
+                android:text="@string/rating"
+                android:textColor="#FFA500"
+                android:layout_margin="3dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:backgroundTint="#FFD580"/>
         </LinearLayout>
 
         <LinearLayout
